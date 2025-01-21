@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Computer Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .quiz-container {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 30px;
+        }
+
+        label {
+            font-size: 18px;
+            margin-bottom: 10px;
+            display: block;
+            color: #555;
+        }
+
+        .quiz-option {
+            margin-left: 20px;
+        }
+
+        input[type=radio] {
+            margin-right: 10px;
+        }
+
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 100%;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="quiz-container">
+        <h1>Online Computer Quiz</h1>
+        <form name="test">
+            <!-- First Set of Questions -->
+            <label>QN1. The brain of the computer is ____________ .</label><br>
+            <input type="radio" name="qn1" value="qn1an1" class="quiz-option">Keyboard<br>
+            <input type="radio" name="qn1" value="qn1an2" class="quiz-option">Mouse<br>
+            <input type="radio" name="qn1" id="an1" value="qn1an3" class="quiz-option">CPU<br>
+            <input type="radio" name="qn1" value="qn1an4" class="quiz-option">Monitor<br><br>
+
+            <label>QN2. Which is the main memory of the computer?</label><br>
+            <input type="radio" name="qn2" value="qn2an1" class="quiz-option">ROM<br>
+            <input type="radio" name="qn2" value="qn2an2" class="quiz-option">Hard Disk<br>
+            <input type="radio" name="qn2" id="an2" value="qn2an3" class="quiz-option">RAM<br>
+            <input type="radio" name="qn2" value="qn2an4" class="quiz-option">CD-Rom<br><br>
+
+            <label>QN3. Which of these is an input device?</label><br>
+            <input type="radio" name="qn3" value="qn3an1" class="quiz-option">Printer<br>
+            <input type="radio" name="qn3" value="qn3an2" class="quiz-option">Monitor<br>
+            <input type="radio" name="qn3" id="an3" value="qn3an3" class="quiz-option">Keyboard<br>
+            <input type="radio" name="qn3" value="qn3an4" class="quiz-option">Speaker<br><br>
+
+            <label>QN4. The operating system used by most smartphones is ____________.</label><br>
+            <input type="radio" name="qn4" id="an4" value="qn4an1" class="quiz-option">Windows<br>
+            <input type="radio" name="qn4" value="qn4an2" class="quiz-option">Linux<br>
+            <input type="radio" name="qn4" value="qn4an3" class="quiz-option">iOS<br>
+            <input type="radio" name="qn4" value="qn4an4" class="quiz-option">MacOS<br><br>
+
+            <label>QN5. Which of these is used to store data permanently?</label><br>
+            <input type="radio" name="qn5" value="qn5an1" class="quiz-option">RAM<br>
+            <input type="radio" name="qn5" value="qn5an2" class="quiz-option">Cache<br>
+            <input type="radio" name="qn5" id="an5" value="qn5an3" class="quiz-option">Hard Disk<br>
+            <input type="radio" name="qn5" value="qn5an4" class="quiz-option">Register<br><br>
+
+            
+            <input type="submit" onclick="result()" value="Submit Quiz">
+        </form>
+    </div>
+
+    <script>
+        function result() {
+            var score = 0;
+            
+            // First Set of Questions
+            if (document.getElementById('an1').checked)
+            score += 1;
+            if (document.getElementById('an2').checked)
+            score += 1;
+            if (document.getElementById('an3').checked)
+            score += 1;
+            if (document.getElementById('an4').checked) 
+            score += 1;
+            if (document.getElementById('an5').checked) 
+            score += 1;
+
+
+            alert("Your Score is " + score + " out of 5.");
+        }
+    </script>
+
+</body>
+</html>

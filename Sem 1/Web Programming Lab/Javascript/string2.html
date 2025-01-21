@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STRING FUNCTIONS</title>
+    <center><h1>STRING FUNCTIONS</h1></center>
+</head>
+<body>
+        <table>
+            <tr>
+                <td>
+                    <label for="">ENTER THE STRING :</label>
+                </td>
+                <td><input type="text" id="char1"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">ENTER STRING TO FIND INDEX :</label>
+                </td>
+                <td><input type="text" id="char2"></td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" onclick="submit()">FIND</button>
+                </td>
+                
+            </tr>
+
+        </table>
+
+        <table>
+            <tr>
+                <td>
+                    <label for="">LENGTH OF STRING IS :</label>
+                </td>
+                <td><span id="out1"></span></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">INDEX OF STRING IS :</label>
+                </td>
+                <td><span id="out2"></span></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">UPPER OF STRING IS :</label>
+                </td>
+                <td><span id="out3"></span></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">LOWER OF STRING IS :</label>
+                </td>
+                <td><span id="out4"></span></td>
+            </tr>
+        </table>
+        <script>
+            function submit()
+            {
+                var in1=document.getElementById("char1").value;
+                var in2=document.getElementById("char2").value;
+                
+                document.getElementById("out1").innerHTML=in1.length;
+                document.getElementById("out2").innerHTML=in1.indexOf(in2);
+                document.getElementById("out3").innerHTML=in1.toUpperCase();
+                document.getElementById("out4").innerHTML=in1.toLowerCase();
+            }
+            </script>
+</body>
+
+</html>

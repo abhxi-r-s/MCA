@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Exam</title>
+    <h1>ONLINE COMPUTER EXAM</h1>
+</head>
+<body>
+    <form action="">
+        <label for="">1.Which of the following is the "brain" of the computer?</label><br><br>
+        <input type="radio" name="" id="">Monitor <br>
+        <input type="radio" name="" id="ans1">CPU <br><br>
+
+        <label for="">2.What does RAM stand for? :</label><br><br>
+        <input type="radio" name="" id="ans2">Random Access Memory <br>
+        <input type="radio" name="" id=""> Run Access Memory <br><br>
+<button type="submit" onclick="check()">SUBMIT</button>
+    </form>
+    <script>
+        function check()
+        {
+        var score=0
+        if(document.getElementById("ans1").checked)
+        {
+            score+=1
+        }
+        if(document.getElementById("ans2").checked)
+        {
+            score+=1
+        }
+        alert('Score is '+score+' out of 2')
+        }
+        
+    </script>
+</body>
+</html>

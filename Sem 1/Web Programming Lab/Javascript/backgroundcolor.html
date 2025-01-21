@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <title>Background Change</title>
+    <!-- <style>
+        /* Simple and centered layout for the entire page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        /* Style for the button */
+        #btn {
+            padding: 15px 30px;
+            font-size: 18px;
+            border: 2px solid #333;
+            background-color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Hover effect for the button */
+        #btn:hover {
+            background-color: #ddd;
+        }
+    </style> -->
+</head>
+
+<body>
+    <div class="container">
+        <input id="btn" type="button" value="Change background">
+    </div>
+
+    <script>
+        document.getElementById("btn").addEventListener("click", colorchange);
+
+        function colorchange() {
+            // Generate a random color
+            var color = '#' + Math.floor(Math.random() * 16777215).toString(16);
+            document.body.style.background = color;
+        }
+    </script>
+</body>
+
+</html>

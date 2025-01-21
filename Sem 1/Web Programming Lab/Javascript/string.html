@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Functions</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Header Styles */
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        /* Table Styling */
+        table {
+            width: 70%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #e0f7fa;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        td input {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Button Styling */
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        /* Output Table Styling */
+        .output-table {
+            width: 60%;
+            margin: 20px auto;
+            background-color: #fff8e1;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .output-table td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        span {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        /* Footer Styling */
+        footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>STRING FUNCTIONS</h1>
+
+    <table>
+        <tr>
+            <td>Enter the string</td>
+            <td><input type="text" name="in1" id="in1"></td>
+        </tr>
+        <tr>
+            <td>Search the string</td>
+            <td><input type="text" name="in2" id="in2"></td>
+        </tr>
+        <tr>
+            <td>Slice the string (Start)</td>
+            <td><input type="number" name="in3" id="in3" placeholder="Start"></td>
+            <td><input type="number" name="in4" id="in4" placeholder="End"></td>
+        </tr>
+        <tr>
+            <td>Enter the substring to replace</td>
+            <td><input type="text" name="in5" id="in5"></td>
+        </tr>
+        <tr>
+            <td>Enter the string to replace</td>
+            <td><input type="text" name="in9" id="in9"></td>
+        </tr>
+        <tr>
+            <td>Enter a string to concatenate</td>
+            <td><input type="text" name="in7" id="in7"></td>
+        </tr>
+        <tr>
+            <td>Enter a string to pad</td>
+            <td><input type="text" name="in8" id="in8"></td>
+        </tr>
+        <tr>
+            <td colspan="3"><button type="button" id="con" onclick="submit()">SUBMIT</button></td>
+        </tr>
+    </table>
+
+    <table class="output-table">
+        <tr>
+            <td>Length of string:</td>
+            <td><span id="out1"></span></td>
+        </tr>
+        <tr>
+            <td>Index of search string:</td>
+            <td><span id="out2"></span></td>
+        </tr>
+        <tr>
+            <td>Sliced string:</td>
+            <td><span id="out3"></span></td>
+        </tr>
+        <tr>
+            <td>Substring:</td>
+            <td><span id="out4"></span></td>
+        </tr>
+        <tr>
+            <td>Replaced string:</td>
+            <td><span id="out5"></span></td>
+        </tr>
+        <tr>
+            <td>Uppercase:</td>
+            <td><span id="out6"></span></td>
+        </tr>
+        <tr>
+            <td>Lowercase:</td>
+            <td><span id="out7"></span></td>
+        </tr>
+        <tr>
+            <td>Concatenated string:</td>
+            <td><span id="out8"></span></td>
+        </tr>
+        <tr>
+            <td>Padding at beginning:</td>
+            <td><span id="out9"></span></td>
+        </tr>
+        <tr>
+            <td>Padding at end:</td>
+            <td><span id="out10"></span></td>
+        </tr>
+        <tr>
+            <td>Substring (using substring):</td>
+            <td><span id="out11"></span></td>
+        </tr>
+    </table>
+
+    <script>
+        function submit() {
+            var in1 = document.getElementById("in1").value;
+            var in2 = document.getElementById("in2").value;
+            var in3 = document.getElementById("in3").value;
+            var in4 = document.getElementById("in4").value;
+            var in5 = document.getElementById("in5").value;
+            var in9 = document.getElementById("in9").value;
+            var in7 = document.getElementById("in7").value;
+            var in8 = document.getElementById("in8").value;
+
+            var out1 = in1.length;
+            document.getElementById("out1").innerHTML = out1;
+
+            var out2 = in1.indexOf(in2);
+            document.getElementById("out2").innerHTML = out2;
+
+            var out3 = in1.slice(in3, in4);
+            document.getElementById("out3").innerHTML = out3;
+
+            var out4 = in1.substr(in5, in4);
+            document.getElementById("out4").innerHTML = out4;
+
+            var out5 = in1.replace(in5, in9);
+            document.getElementById("out5").innerHTML = out5;
+
+            var out6 = in1.toUpperCase();
+            document.getElementById("out6").innerHTML = out6;
+
+            var out7 = in1.toLowerCase();
+            document.getElementById("out7").innerHTML = out7;
+
+            var out8 = in1.concat(in7);
+            document.getElementById("out8").innerHTML = out8;
+
+            var out9 = in1.padStart(30, in8);
+            document.getElementById("out9").innerHTML = out9;
+
+            var out10 = in1.padEnd(30, in8);
+            document.getElementById("out10").innerHTML = out10;
+
+            var out11 = in1.substring(in3, in4);
+            document.getElementById("out11").innerHTML = out11;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BgColor</title>
+</head>
+<body>
+    <button id="btn">CLICK TO CHANGE COLOR</button>
+</body>
+<!-- ; not needed in javascipt -->
+<script>
+    document.getElementById("btn").addEventListener("click",colorchange);
+    function colorchange()
+    {
+        var color= "#"+ Math.floor(Math.random()*16777215).toString(16);
+        document.body.style.backgroundColor=color;
+    }
+</script>
+</html>
