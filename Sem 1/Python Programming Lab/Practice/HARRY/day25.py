@@ -1,0 +1,11 @@
+tuple1 = (0, 1, 2, 3, 2, 31, 1, 3, 2, 3)
+res = tuple1.count(3)
+print(res)
+res = tuple1.index(3)
+print(res)
+res = tuple1.index(31)
+print(res)
+res = tuple1.index(3, 4, 8)#slice from index 4 -7 and there looks the index of 3
+print(res)
+res = len(tuple1)
+print(res)

@@ -1,0 +1,11 @@
+a="Abhishek@!@!"
+b=a.lower()
+c=a.capitalize()
+d=a.upper()
+e=a.swapcase()
+f=a.rstrip("!")
+G=a.replace("Abhishek","abhxified")
+print(c)
+print(b)
+print(f)
+print(G)
