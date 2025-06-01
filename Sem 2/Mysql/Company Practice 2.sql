@@ -1,0 +1,15 @@
+USE COMPANY;
+SELECT * FROM EMPLOYEES;
+
+-- Change Commission of Employee of Id 100 to 5100
+UPDATE  EMPLOYEES SET COMMISSION = 5100 WHERE EMPLOYEE_ID=100;
+
+-- Change dept to depts
+ALTER TABLE DEPT RENAME TO DEPTS;
+
+-- Change Commission column to Commissions
+ALTER TABLE EMPLOYEES RENAME COLUMN COMMISSION TO COMMISSIONS;
+
+-- Continue from page 11
+
+
