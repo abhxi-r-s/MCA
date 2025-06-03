@@ -1,0 +1,10 @@
+CREATE DEFINER=`root`@`localhost` TRIGGER `saleitem_AFTER_INSERT` AFTER INSERT ON `saleitem` FOR EACH ROW BEGIN
+declare stock int;
+SELECT QUANTITY INTO stock FROM PRODUCT WHERE PDTID=NEW.PDTID;
+IF stock<NEW.QTY
+then
+	signal sqlstate "45000" set message_text="out of stock";
+else
+	UPDATE PRODUCT SET PRODUCT.QUANTITY=PRODUCT.QUANTITY-NEW.QUANTITY;
+END IF;
+END
