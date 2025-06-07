@@ -1,6 +1,6 @@
 #!/bin/bash
 read -p "Enter the foldername :" dir
-for i in "C:/Users/abhis/Desktop/MCA LAB/Sem 2/NSA/Lab_Questions/$dir"
+for i in "C:/Users/abhis/Desktop/MCA LAB/Sem 2/NSA/Lab_Qustions/$dir"
 do
     if [ -d "$i" ]
     then
