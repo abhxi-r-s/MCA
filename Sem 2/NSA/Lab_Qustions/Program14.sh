@@ -1,5 +1,5 @@
 #!/bin/bash
-read -p "Enter the llimit :" n
+read -p "Enter the limit :" n
 a=0
 b=1
 for i in $( seq 1 $n ) 
