@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "SHELL IS: $SHELL"
+echo "HOME DIRECTORY: $HOME"
+echo "OPERATING SYSTEM: $OSTYPE"
+echo "CURRENT WORKING DIRECTORY: "
+pwd
