@@ -23,7 +23,7 @@ do
             ;;
         2)
             read -p "Enter the ID: " id
-            grep -i "^$id" "$db"
+            grep -i "$id" "$db"
             ;;
         3)
             read -p "Enter ID: " sid
