@@ -1,5 +1,6 @@
-import Graphics.*;
 import java.util.*;
+
+import Graphics.*;
 
 public class test_package {
     
@@ -19,7 +20,7 @@ public class test_package {
             case 1:
             System.out.println("Enter the radius of the circle :");
             double r=sc.nextDouble();
-            Graphics.Circle c= new Graphics.Circle(r);
+            Graphics2.Circle c= new Graphics2.Circle(r);
             c.area();
             break;
 

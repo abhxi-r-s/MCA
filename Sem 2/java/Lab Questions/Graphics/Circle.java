@@ -1,5 +1,6 @@
 package Graphics;
 
+
 public class Circle implements Figure {
 
     double radius;

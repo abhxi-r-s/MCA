@@ -1,5 +1,6 @@
 package Graphics;
 
+
 public class Rectangle implements Figure{
     
     double l,b;

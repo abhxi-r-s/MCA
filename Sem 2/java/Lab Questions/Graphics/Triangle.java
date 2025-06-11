@@ -1,5 +1,7 @@
 package Graphics;
 
+
+
 public class Triangle implements Figure {
 
     double h,b;

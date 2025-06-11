@@ -1,5 +1,7 @@
 package Graphics;
 
+
+
 public class Square implements Figure {
     
     double s;
