@@ -1,0 +1,52 @@
+button{
+    background-color: greenyellow;
+    font-size: xxx-large;
+    
+}
+button:hover{
+    background-color: brown;
+    color: aliceblue;
+    
+}
+a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xxx-large;
+}
+a:link{
+    color: brown;
+}
+a:hover{
+    color: black;
+    font-size: xx-large;
+}
+a:active{
+    color: blueviolet;
+}
+a:visited{
+    color: grey;
+}
+marquee{
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: rgb(202, 28, 28);
+    
+}
+li:hover{
+    background-color: darkkhaki;
+}
+li:not(:hover){
+    background-color: rgb(143, 142, 129);
+}
+li:nth-child(5){/*1,3,3n,odd,even*/
+    background-color: blueviolet;
+}
+#greeting p{
+    color: blue;
+    display: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#greeting:hover p{
+    display: block;
+    font-size: xx-large;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="reform.css">
+</head>
+<body>
+    <h1>REGISTRATION FORM</h1>
+    <form action="index.php" method="POST"><!--to accept file or image or multiple image-->
+        <label for="username">Username :</label>
+        <input type="text" id="username" name="username" required minlength="6" maxlength="12" placeholder="Cobob"><br><br>
+        <label for="password">Password :</label>
+        <input type="password" id="password" name="password" minlength="6" maxlength="6"><br><br>
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" placeholder="demo@gmail.com"><br><br>
+        <label for="phone" id="phone">Phone #</label>
+        <input type="phone" id="phone" name="phone" minlength="10" maxlength="10"><br><br>
+        <label for="bday" id="bday">Birth Date :</label>
+        <input type="date" name="bday" id="bday"><br><br>
+        <label for="quantity" id="quantity">Quantity :</label>
+        <input type="number" name="number" min="0" max="99"><br>
+        <br>
+        <label for="payment">Payment</label>
+        <select>
+            <option value="visa" name="payment">visa</option>
+            <option value="mastercard" name="payment">mastercard</option>
+            <option value="giftcard" name="payment">giftcard</option>
+        </select>
+        <br><br>
+        
+        <input type="reset">&nbsp;&nbsp;
+        <input type="submit" name="Register"><br>
+    </form>
+    
+</body>
+</html>

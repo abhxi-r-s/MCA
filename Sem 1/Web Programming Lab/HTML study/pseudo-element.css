@@ -1,0 +1,23 @@
+h1::first-letter{
+    color: blue;
+    font-size: 2em;
+    font-style: italic;
+}
+p::first-line{
+    background-color: chartreuse;
+}
+p::selection{
+    color: black;
+    background-color: brown;
+}
+#fruits li::before{
+    content: "😍";
+}
+#apple::after{
+    content:"🍎🍎" ;
+}
+#fruits li::marker{
+    content:"✔️";
+    
+    
+}

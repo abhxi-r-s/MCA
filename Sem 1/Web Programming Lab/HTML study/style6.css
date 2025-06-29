@@ -1,0 +1,12 @@
+body{
+    border: 3px dashed chartreuse;
+    display: flow-root;
+}
+#img1{
+    float: left;
+    margin-right: 50px;
+}
+#img2{
+    float: right;
+    margin-right: 50px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="regform.css">
+</head>
+<body>       
+    <marquee behaviour="scroll" onmouseover="stop()" onmouseout="start()">
+        <h2>ENTER THE DETAILS</h2></marquee>
+    
+<div class="container">
+    <h2>Student Registration Form</h2>
+    
+    <form>
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="It should contain @..." required>
+
+        <label for="mobile">Mobile:</label>
+        <input type="text" id="mobile" name="mobile" placeholder="Only 10 digits are allowed" maxlength="10" required>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required> Male
+        <input type="radio" id="female" name="gender" value="female"> Female
+
+        <label for="dob">Date Of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required>
+
+        <label for="pin">Area PIN:</label>
+        <input type="text" id="pin" name="pin" required>
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required>
+
+        <label for="qualification">Qualification:</label>
+        <select id="qualification" name="qualification" required>
+            <option value="">Select Qualification</option>
+            <option value="high-school">High School</option>
+            <option value="bachelor">Bachelor's Degree</option>
+            <option value="master">Master's Degree</option>
+        </select>
+
+        <label for="specialization">Specialization:</label>
+        <input type="checkbox" id="cs" name="specialization" value="computer-science"> Computer Science <br>
+        <input type="checkbox" id="it" name="specialization" value="it"> Information Technology <br>
+        <input type="checkbox" id="ca" name="specialization" value="computer-architecture"> Computer Architecture <br>
+        <input type="checkbox" id="telecom" name="specialization" value="telecommunication"> Tele Communication <br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit" class="submit-btn">Register</button>
+    </form>
+</div>
+
+</body>
+</html>

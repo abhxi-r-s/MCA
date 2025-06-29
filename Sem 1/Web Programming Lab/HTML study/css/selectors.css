@@ -1,0 +1,18 @@
+*
+{
+    font-family:'Segoe UI',Tahoma,Geneva, Verdana, sans-serif;
+    text-decoration: line-through;
+    text-align: center;
+}
+h1
+{
+    font-style: italic;
+}
+.cl
+{
+    background-color: blue;
+    color: rgb(249,250,250);
+}
+#heading2{
+    color: crimson;
+}

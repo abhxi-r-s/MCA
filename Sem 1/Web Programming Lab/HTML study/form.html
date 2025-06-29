@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="index.php" method="POST" enctype="multipart/form-data"><!--to accept file or image or multiple image-->
+        <label for="username">Username :</label>
+        <input type="text" id="username" required minlength="6" maxlength="12" placeholder="Cobob"><br><br>
+        <label for="password">Password :</label>
+        <input type="password" id="password" minlength="6" maxlength="6"><br><br>
+        <label for="email">Email :</label>
+        <input type="email" id="email" placeholder="demo@gmail.com"><br><br>
+        <label for="phone" id="phone">Phone #</label>
+        <input type="phone" id="phone" minlength="10" maxlength="10"><br><br>
+        <label for="bday" id="bday">Birth Date :</label>
+        <input type="date" name="bday" id="bday"><br><br>
+        <label for="quantity" id="quantity">Quantity :</label>
+        <input type="number" min="0" max="99"><br>
+        <label for="title">Title</label>
+        <br>
+        <label for="Mr.">Mr.&nbsp;</label>
+        <input type="radio" id="Mr." value="Mr." name="title"><!--name attributr for all radio buttons to select only one value-->
+        <br>
+        <label for="Ms.">Ms.&nbsp;</label>
+        <input type="radio" id="Ms." value="Ms."name="title">
+        <br>
+        <label for="PhD">PhD</label>
+        <input type="radio" id="PhD" value="PhD"name="title">
+        <br><br>
+        <label for="payment">Payment</label>
+        <select>
+            <option value="visa">visa</option>
+            <option value="mastercard">mastercard</option>
+            <option value="giftcard">giftcard</option>
+        </select>
+        <br><br>
+        <label for="subscribe">Subscribe</label>
+        <input type="checkbox"><br><br>
+        <label for="comment">Comment</label>
+        <textarea id="comment" rows="3" col="25"></textarea><br><br>
+        <label for="file">File</label>
+        <label for="file" id="file" accept="image/png ,image/jpeg"></label><br><br>
+        <input type="reset">&nbsp;&nbsp;
+        <input type="submit">
+    </form>
+    
+</body>
+</html>

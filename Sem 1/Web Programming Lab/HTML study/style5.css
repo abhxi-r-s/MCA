@@ -1,0 +1,16 @@
+@font-face {
+    src: url(fonts/JetBrainsMono-Italic-VariableFont_wght.ttf);
+    font-family: JetBrainsMono-Italic-VariableFont_wght;
+    
+}
+h1{
+    font-family: JetBrainsMono-Italic-VariableFont_wght,Verdana, Geneva, Tahoma, sans-serif;
+}
+/*here the font downloaded to fonts folder is called here by font face and that font family is declared in h1 file*/
+@font-face {
+    src: url(fonts/JetBrainsMono-VariableFont_wght.ttf);
+    font-family: JetBrainsMono-VariableFont_wght;
+}
+p{
+    font-family: JetBrainsMono-VariableFont_wght;
+}

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Name | Marketing Manager</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            background-color: #f7f8fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('header-bg.jpg') center/cover no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        header h1 {
+            font-size: 4em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 1.5em;
+        }
+
+        nav {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 0 15px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        section {
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 40px;
+            position: relative;
+            display: inline-block;
+        }
+
+        h2::after {
+            content: '';
+            width: 80px;
+            height: 3px;
+            background-color: #007bff;
+            display: block;
+            margin: 10px auto;
+        }
+
+        .about,
+        .experience,
+        .projects,
+        .contact {
+            background-color: white;
+            padding: 50px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .about p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        .skills {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .skill {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 8px;
+            width: 30%;
+        }
+
+        .skill h3 {
+            font-size: 1.5em;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        .skill p {
+            color: #555;
+        }
+
+        .experience-item {
+            margin-bottom: 40px;
+        }
+
+        .experience-item h3 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #007bff;
+        }
+
+        .experience-item p {
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        .experience-item ul {
+            text-align: left;
+            list-style-type: disc;
+            padding-left: 40px;
+        }
+
+        .projects ul {
+            text-align: left;
+            padding-left: 40px;
+        }
+
+        .projects li {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        .contact-info a {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        .social-icons img {
+            width: 40px;
+            margin: 0 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            nav a {
+                font-size: 1em;
+            }
+
+            .skills {
+                flex-direction: column;
+            }
+
+            .skill {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Your Name</h1>
+        <p>Marketing Manager | Digital Strategist | Brand Innovator</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about" class="about container">
+        <h2>About Me</h2>
+        <p>I am a highly experienced marketing manager currently at Swiggy, with a passion for creating compelling marketing campaigns that resonate with target audiences. My expertise lies in developing digital strategies, brand management, and leveraging data analytics to drive customer engagement and business growth.</p>
+
+        <div class="skills">
+            <div class="skill">
+                <h3>Digital Marketing</h3>
+                <p>Proven expertise in SEO, SEM, email marketing, social media, and content marketing to drive conversions.</p>
+            </div>
+            <div class="skill">
+                <h3>Brand Strategy</h3>
+                <p>Experienced in creating long-term brand strategies and market positioning for better visibility.</p>
+            </div>
+            <div class="skill">
+                <h3>Data Analytics</h3>
+                <p>Skilled in data analysis tools to evaluate campaign performance and make informed decisions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience container">
+        <h2>Experience</h2>
+        <div class="experience-item">
+            <h3>Marketing Manager | Swiggy</h3>
+            <p><strong>Years Active:</strong> [Year] – Present</p>
+            <ul>
+                <li>Developed and launched multi-channel marketing campaigns, increasing customer acquisition by X%.</li>
+                <li>Collaborated with cross-functional teams to align business goals with marketing strategies.</li>
+                <li>Implemented A/B testing for various campaigns, improving overall conversion rates.</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <h3>Marketing Specialist | [Previous Company]</h3>
+            <p><strong>Years Active:</strong> [Year] – [Year]</p>
+            <ul>
+                <li>Managed digital marketing campaigns, resulting in X% revenue growth.</li>
+                <li>Created data-driven content strategies, boosting engagement by X%.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="projects container">
+        <h2>Key Projects</h2>
+        <ul>
+            <li><strong>Campaign 1:</strong> Increased user engagement by X% through a targeted content marketing campaign.</li>
+            <li><strong>Project 2:</strong> Improved customer retention by X% with the introduction of a new CRM strategy.</li>
+            <li><strong>Project 3:</strong> Spearheaded a social media rebranding campaign that boosted Swiggy’s brand presence in key markets.</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact container">
+        <h2>Contact Me</h2>
+        <p>If you would like to get in touch, feel free to reach out via email or connect on LinkedIn.</p>
+        <div class="contact-info">
+            <a href="mailto:yourname@example.com">yourname@example.com</a>
+            <a href="https://linkedin.com/in/yourprofile">LinkedIn Profile</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://linkedin.com/in/yourprofile"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="https://twitter.com/yourprofile"><img src="twitter-icon.png" alt="Twitter"></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Your Name | All Rights Reserved</p>
+    </footer>
+
+</

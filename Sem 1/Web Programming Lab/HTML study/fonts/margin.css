@@ -1,0 +1,29 @@
+body{
+    margin: 0px;
+    
+}
+.box{
+    border: 5px solid;
+    font-size: 5em;
+    width: 250px;
+    height: 250px;
+    box-shadow: 3px 3px 5px,;
+}
+#box1{
+    background-color: tomato;
+    margin-left: auto; /* always align box1 to left*/
+
+}
+#box2{
+    background-color: aqua;
+    margin-top: 50px;
+    margin:auto;/*Always align box2 to middle*/
+}
+#box3{
+    background-color: chartreuse;
+    margin-right: auto;
+}
+#box4{
+    background-color: chocolate;
+    margin-right: 50px;
+}

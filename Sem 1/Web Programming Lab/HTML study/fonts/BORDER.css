@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+    border-style: groove;
+    border-width: 10px;
+    border-color: brown;
+    border-radius: 10px;
+
+}
+h2{
+    border:4px rgb(73, 199, 19) dashed;
+    text-align: center;
+    border-radius: 20px;
+}
+p{
+    border-bottom: 10px dashed black;
+}
+.para{
+    border-left: 7px solid cornflowerblue;
+    border-top: 6px solid coral;
+    border-right: 7px solid darkgreen
+}
