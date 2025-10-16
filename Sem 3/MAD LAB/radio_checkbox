@@ -1,0 +1,82 @@
+package com.example.radio_checkbox;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
+
+public class MainActivity extends AppCompatActivity {
+
+    RadioGroup rg;
+    RadioButton maleradio,femaleradio;
+    CheckBox engch,malch;
+    Button submitt;
+    TextView resulttv;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        EdgeToEdge.enable(this);
+        setContentView(R.layout.activity_main);
+
+        rg=findViewById(R.id.radioGroup);
+        maleradio=findViewById(R.id.radioButton3);
+        femaleradio=findViewById(R.id.radioButton4);
+
+        engch=findViewById(R.id.checkBox);
+        malch=findViewById(R.id.checkBox2);
+        submitt=findViewById(R.id.button);
+        resulttv=findViewById(R.id.tv);
+
+
+        rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(@NonNull RadioGroup group, int checkedId) {
+                String gender;
+                if(maleradio.isChecked()){
+                    gender="Male";
+                }
+                else if(femaleradio.isChecked()){
+                    gender="Female";
+                }
+                else {
+                    gender="Not Selected";
+                }
+                Toast.makeText(MainActivity.this,"Selected Gender:"+gender,Toast.LENGTH_SHORT).show();
+
+            }
+        });
+        submitt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String languages = "Languages Known :";
+                if(engch.isChecked()){
+                    languages+="English";
+                }
+                if(malch.isChecked()){
+
+                    languages+="  Malayalam";
+                }
+
+                resulttv.setText(languages);
+            }
+        });
+
+//        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+//            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+//            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+//            return insets;
+//        });
+    }
+}
